@@ -4,10 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, styles, textVariant } from "@/lib/utils";
 import ReactFlipCard from "reactjs-flip-card";
-import FrontPackageCard from "@/FrontPackageCard";
-import BackPackageCard from "@/BackPackageCard";
+import FrontPackageCard from "@/components/ui/FrontPackageCard";
+import BackPackageCard from "@/components/ui/BackPackageCard";
 import { packages } from "@/constants/index.ts";
-import { PackagesParams } from "@/types/index.d.ts";
+import type { PackagesParams } from "@/types";
 
 const Package: React.FC = (): React.JSX.Element => {
   return (

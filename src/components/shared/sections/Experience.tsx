@@ -9,7 +9,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "@/constants/index.ts";
 // Image replaced;
-import { ExperienceCardParams } from "@/types/index.d.ts";
+import type { ExperienceCardParams } from "@/types";
 
 const ExperienceCard = ({
   experience,

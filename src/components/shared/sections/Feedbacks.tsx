@@ -2,7 +2,7 @@ import { fadeIn, styles, textVariant } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
 import { testimonials } from "@/constants/index.ts";
-import { TestimonialParams } from "@/types/index.d.ts";
+import type { TestimonialParams } from "@/types";
 // Image replaced;
 import SectionWrapper from "./SectionWrapper";
 

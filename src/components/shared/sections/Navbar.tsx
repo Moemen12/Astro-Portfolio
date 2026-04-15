@@ -20,12 +20,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/sheet";
+} from "@/components/ui/sheet";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/popover";
+} from "@/components/ui/popover";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -70,9 +70,8 @@ const Navbar = () => {
               animationDuration={800}
             >
               <li
-                className={`${
-                  active === `#${link.id}` ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                className={`${active === `#${link.id}` ? "text-white" : "text-secondary"
+                  } hover:text-white text-[18px] font-medium cursor-pointer`}
               >
                 <a
                   href={`#${link.id}`}
@@ -161,11 +160,10 @@ const Navbar = () => {
                       >
                         <li
                           key={link.id}
-                          className={`${
-                            active === `#${link.id}`
+                          className={`${active === `#${link.id}`
                               ? "text-white"
                               : "text-secondary"
-                          } hover:text-white text-[18px] font-medium cursor-pointer`}
+                            } hover:text-white text-[18px] font-medium cursor-pointer`}
                         >
                           <a
                             href={`#${link.id}`}

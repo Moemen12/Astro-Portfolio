@@ -1,10 +1,10 @@
-import {
+import type {
   ExperienceCardParams,
   PackagesParams,
   ProjectsParams,
   TechnologiesParams,
   TestimonialParams,
-} from "@/types/index.d.ts";
+} from "@/types";
 import {
   mobile,
   backend,

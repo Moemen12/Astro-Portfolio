@@ -7,5 +7,8 @@ export default defineConfig({
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
+    ssr: {
+      noExternal: ['reactjs-flip-card'],
+    },
   },
 });

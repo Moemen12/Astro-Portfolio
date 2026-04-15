@@ -1,4 +1,4 @@
-import { PackagesParams } from "../@/types/index.d.ts";
+import type { PackagesParams } from "@/types";
 // Image replaced;
 import React from "react";
 
@@ -8,7 +8,7 @@ const FrontPackageCard = ({ pkg }: { pkg: PackagesParams }) => {
       <h3 className="text-white text-[20px] font-bold text-center">
         {pkg.name}
       </h3>
-      <img src={pkg.image} alt={pkg.name} className="w-16" />
+      <img src={pkg.image} alt={pkg.name} className="w-20 h-16 object-contain mt-3" />
     </div>
   );
 };

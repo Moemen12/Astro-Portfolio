@@ -1,5 +1,5 @@
 import { Badge } from "./badge";
-import { PackagesParams } from "../@/types/index.d.ts";
+import type { PackagesParams } from "@/types";
 // Link replaced;
 
 const BackPackageCard = ({ pkg }: { pkg: PackagesParams }) => {

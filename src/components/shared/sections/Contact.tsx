@@ -5,7 +5,7 @@ import { EmailFormSchema, slideIn, styles } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/button";
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -13,12 +13,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/form";
-import { Input } from "@/input";
-import { Textarea } from "@/textarea";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { EarthCanvas } from "@/components/shared/canvas";
 import emailjs from "@emailjs/browser";
-import { useToast } from "@/use-toast";
+import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -27,9 +27,9 @@ const Contact = () => {
   const [loading, setLoading] = useState<boolean>();
 
   const envVar = {
-    TempId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-    ServiceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-    keyId: process.env.NEXT_PUBLIC_EMAILJS_KEY,
+    TempId: import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID,
+    ServiceId: import.meta.env.PUBLIC_EMAILJS_SERVICE_ID,
+    keyId: import.meta.env.PUBLIC_EMAILJS_KEY,
   };
 
   const form = useForm<z.infer<typeof EmailFormSchema>>({

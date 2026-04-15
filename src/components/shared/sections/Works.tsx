@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles, textVariant, fadeIn } from "@/lib/utils";
 import { github } from "@/assets";
 import { projects } from "@/constants/index.ts";
-import { type ProjectsParams } from "@/types/index.d.ts";
+import { type ProjectsParams } from "@/types";
 import SectionWrapper from "./SectionWrapper";
 
 const ProjectCard = ({
