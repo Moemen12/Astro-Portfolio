@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  Education,
+  Package,
+  StarsCanvas
+} from "../components/shared/sections/index";
+---
+
+<Layout title="Moemen | Portfolio">
+  <div class="relative z-0 bg-primary">
+    <div class="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <Navbar client:load />
+      <Hero client:load />
+    </div>
+    <About client:load />
+    <Experience client:load />
+    <Education client:load />
+    <Tech client:load />
+    <Works client:load />
+    <Package client:load />
+    <div class="relative z-0">
+      <Contact client:load />
+      <StarsCanvas client:load />
+    </div>
+  </div>
+</Layout>
