@@ -1,9 +1,8 @@
-"use client";
-import { technologies } from "@/constants";
+import { technologies } from "@/constants/index.ts";
 import React, { Suspense, useEffect, useState } from "react";
-import { BallCanvas } from "../canvas";
-import { TechnologiesParams } from "@/types";
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import { BallCanvas } from "@/components/shared/canvas";
+import { TechnologiesParams } from "@/types/index.d.ts";
+import SectionWrapper from "./SectionWrapper";
 import { motion } from "framer-motion";
 import { styles, textVariant } from "@/lib/utils";
 // Image replaced;
@@ -12,7 +11,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "@/tooltip";
 import Spinner from "@/components/Spinner";
 
 const Tech: React.FC = (): React.JSX.Element => {

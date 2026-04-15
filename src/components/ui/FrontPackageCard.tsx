@@ -1,4 +1,4 @@
-import { PackagesParams } from "@/types";
+import { PackagesParams } from "../@/types/index.d.ts";
 // Image replaced;
 import React from "react";
 

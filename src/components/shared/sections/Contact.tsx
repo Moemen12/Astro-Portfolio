@@ -1,12 +1,11 @@
-"use client";
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { EmailFormSchema, slideIn, styles } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/button";
 import {
   Form,
   FormControl,
@@ -14,12 +13,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { EarthCanvas } from "../canvas";
+} from "@/form";
+import { Input } from "@/input";
+import { Textarea } from "@/textarea";
+import { EarthCanvas } from "@/components/shared/canvas";
 import emailjs from "@emailjs/browser";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/use-toast";
 
 const Contact = () => {
   const formRef = useRef();

@@ -1,11 +1,10 @@
-"use client";
 import { fadeIn, styles, textVariant } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
-import { testimonials } from "@/constants";
-import { TestimonialParams } from "@/types";
+import { testimonials } from "@/constants/index.ts";
+import { TestimonialParams } from "@/types/index.d.ts";
 // Image replaced;
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 
 const FeedbackCard = ({
   index,

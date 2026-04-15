@@ -1,5 +1,4 @@
-"use client";
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 import React from "react";
 import { motion } from "framer-motion";
 import { styles, textVariant } from "@/lib/utils";

@@ -1,31 +1,31 @@
 
-declare type ExperienceCardParams = {
+export type ExperienceCardParams = {
   title: string;
   company_name: string;
-  icon: StaticImageData;
+  icon: string;
   iconBg: string;
   date: string;
   points: string[];
 };
 
-declare type TechnologiesParams = {
+export type TechnologiesParams = {
   name: string;
-  icon: StaticImageData;
+  icon: string;
 };
 
-declare type ProjectsParams = {
+export type ProjectsParams = {
   name: string;
   description: string;
   tags: {
     name: string;
     backgroundColor: string;
   }[];
-  image: StaticImageData;
+  image: string;
   source_code_link?: string;
   live?: string;
 };
 
-declare type TestimonialParams = {
+export type TestimonialParams = {
   testimonial: string;
   name: string;
   designation: string;
@@ -33,9 +33,9 @@ declare type TestimonialParams = {
   image: string;
 };
 
-declare type PackagesParams = {
+export type PackagesParams = {
   name: string;
-  image: StaticImageData;
+  image: string;
   version: string;
   github_url: string;
   npm_url: string;

@@ -1,5 +1,4 @@
-"use client";
-import { navLinks } from "@/constants";
+import { navLinks } from "@/constants/index.ts";
 import { styles } from "@/lib/utils";
 import {
   logo,
@@ -21,12 +20,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/sheet";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/popover";
 
 const Navbar = () => {
   const [active, setActive] = useState("");

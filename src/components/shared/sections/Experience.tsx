@@ -1,16 +1,15 @@
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { styles, textVariant } from "@/lib/utils";
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiences } from "@/constants";
+import { experiences } from "@/constants/index.ts";
 // Image replaced;
-import { ExperienceCardParams } from "@/types";
+import { ExperienceCardParams } from "@/types/index.d.ts";
 
 const ExperienceCard = ({
   experience,

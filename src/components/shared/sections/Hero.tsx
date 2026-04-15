@@ -1,8 +1,7 @@
-"use client";
 // import { motion } from "framer-motion";
 import { styles } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-// import { ComputersCanvas } from "../canvas";
+// import { ComputersCanvas } from "@/components/shared/canvas";
 // Link replaced;
 import { ReactTyped } from "react-typed";
 // Image replaced;
@@ -86,7 +85,7 @@ const Hero = () => {
                 />
               </a>
               <a
-                href={"https://www.linkedin.com/in/moemen-saadeh-707436260"}
+                href={"https://www.linkedin.c@/moemen-saadeh-707436260"}
               >
                 <img
                   src={linkdln}

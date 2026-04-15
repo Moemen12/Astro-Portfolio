@@ -12,8 +12,7 @@
     "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*", "src/*/index"],
-      "@/assets": ["src/assets.ts"]
+      "@/*": ["src/*"]
     }
   }
 }

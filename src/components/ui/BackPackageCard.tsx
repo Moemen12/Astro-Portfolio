@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge";
-import { PackagesParams } from "@/types";
+import { Badge } from "./badge";
+import { PackagesParams } from "../@/types/index.d.ts";
 // Link replaced;
 
 const BackPackageCard = ({ pkg }: { pkg: PackagesParams }) => {

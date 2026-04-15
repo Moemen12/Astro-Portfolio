@@ -1,10 +1,9 @@
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, styles, textVariant } from "@/lib/utils";
-import { services } from "@/constants";
+import { services } from "@/constants/index.ts";
 import { Tilt } from "react-tilt";
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 
 const ServiceCard = ({
   title,
@@ -12,7 +11,7 @@ const ServiceCard = ({
 }: {
   index: string;
   title: string;
-  icon: StaticImageData;
+  icon: string;
 }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">

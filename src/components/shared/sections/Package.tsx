@@ -1,14 +1,13 @@
-"use client";
 
-import SectionWrapper from "@/components/shared/sections/SectionWrapper";
+import SectionWrapper from "./SectionWrapper";
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn, styles, textVariant } from "@/lib/utils";
 import ReactFlipCard from "reactjs-flip-card";
-import FrontPackageCard from "@/components/ui/FrontPackageCard";
-import BackPackageCard from "@/components/ui/BackPackageCard";
-import { packages } from "@/constants";
-import { PackagesParams } from "@/types";
+import FrontPackageCard from "@/FrontPackageCard";
+import BackPackageCard from "@/BackPackageCard";
+import { packages } from "@/constants/index.ts";
+import { PackagesParams } from "@/types/index.d.ts";
 
 const Package: React.FC = (): React.JSX.Element => {
   return (

@@ -4,7 +4,7 @@ import {
   ProjectsParams,
   TechnologiesParams,
   TestimonialParams,
-} from "@/types";
+} from "@/types/index.d.ts";
 import {
   mobile,
   backend,
