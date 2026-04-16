@@ -1,0 +1,20 @@
+diff --git a/node_modules/reactjs-flip-card/dist/ReactFlipCard.js b/node_modules/reactjs-flip-card/dist/ReactFlipCard.js
+index a49b1f9..36b50c7 100644
+--- a/node_modules/reactjs-flip-card/dist/ReactFlipCard.js
++++ b/node_modules/reactjs-flip-card/dist/ReactFlipCard.js
+@@ -1,6 +1,6 @@
+ import * as React from "react";
+ import { useEffect, useState } from "react";
+-import "./ReactFlipCard.css";
++// import "./ReactFlipCard.css";
+ var Direction;
+ (function (Direction) {
+     Direction["vertical"] = "vertical";
+diff --git a/node_modules/reactjs-flip-card/dist/index.js b/node_modules/reactjs-flip-card/dist/index.js
+index 6e9e611..9b413b9 100644
+--- a/node_modules/reactjs-flip-card/dist/index.js
++++ b/node_modules/reactjs-flip-card/dist/index.js
+@@ -1,2 +1,2 @@
+-import ReactFlipCard from "./ReactFlipCard";
++import ReactFlipCard from "./ReactFlipCard.js";
+ export default ReactFlipCard;

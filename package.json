@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "start": "astro preview"
+    "start": "astro preview",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@astrojs/react": "latest",
@@ -48,6 +49,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/three": "latest",
+    "patch-package": "^8.0.1",
     "postcss-import": "^16.1.1",
     "typescript": "latest"
   }
