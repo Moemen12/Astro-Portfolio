@@ -21,7 +21,7 @@ import emailjs from "@emailjs/browser";
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
 
   const { toast } = useToast();
   const [loading, setLoading] = useState<boolean>();
@@ -101,7 +101,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 rounded-2xl p-8"
+        className="flex-[0.75] bg-black-100 rounded-2xl p-8!"
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
@@ -123,11 +123,11 @@ const Contact = () => {
                     <Input
                       placeholder="What's your name?"
                       {...field}
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4! px-6! placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
                     />
                   </FormControl>
 
-                  <FormMessage className="text-red-500" />
+                  <FormMessage className="text-red-500 pt-2! pt-2!" />
                 </FormItem>
               )}
             />
@@ -145,11 +145,11 @@ const Contact = () => {
                       type="email"
                       placeholder="What's your email?"
                       {...field}
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4! px-6! placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
                     />
                   </FormControl>
 
-                  <FormMessage className="text-red-500" />
+                  <FormMessage className="text-red-500 pt-2!" />
                 </FormItem>
               )}
             />
@@ -167,16 +167,16 @@ const Contact = () => {
                       rows={7}
                       placeholder="What do you want to say?"
                       {...field}
-                      className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
+                      className="bg-tertiary py-4! px-6! placeholder:text-secondary text-white !rounded-lg outline-none border-none font-medium"
                     />
                   </FormControl>
 
-                  <FormMessage className="text-red-500" />
+                  <FormMessage className="text-red-500 pt-2!" />
                 </FormItem>
               )}
             />
             <Button
-              className="bg-tertiary w-fit py-3 px-8 text-white shadow-md shadow-primary rounded-xl hover:bg-tertiary"
+              className="bg-tertiary w-fit py-3! px-8! text-white shadow-md shadow-primary rounded-xl hover:bg-tertiary cursor-pointer"
               type="submit"
             >
               {loading ? "Sending..." : "Send"}

@@ -42,7 +42,7 @@ const ExperienceCard = ({
         {experience.company_name}
       </p>
     </div>
-    <ul className="mt-5 list-disc ml-5 space-y-2">
+    <ul className="!mt-5 list-disc !ml-5 !space-y-2">
       {experience.points.map((point, index: number) => (
         <li
           key={`experience-point-${index}`}
@@ -58,11 +58,15 @@ const ExperienceCard = ({
 const Experience: React.FC = (): React.JSX.Element => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+      >
         <p className={`${styles.sectionSubText}`}>What I have done so far</p>
         <h2 className={`${styles.sectionHeadText}`}>Work Exprience.</h2>
       </motion.div>
-
       <div className="mt-20 flex flex-col" style={{ overflowWrap: "anywhere" }}>
         <VerticalTimeline>
           {experiences.map(

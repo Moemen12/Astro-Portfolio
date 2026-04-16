@@ -12,49 +12,68 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  live,
   source_code_link,
 }: ProjectsParams) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", 0.5, 0.75)}
+      className="h-full"
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5! rounded-2xl sm:w-[360px] w-full h-full flex flex-col"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px] shrink-0">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
+          <div className="absolute inset-0 flex flex-col items-end">
+            <div className="flex m-1! card-img_hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
+            {live ? (
+              <div className="flex m-1 card-img_hover items-end">
+                <div
+                  onClick={() => window.open(live, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <span className="text-xs font-bold text-white">Live</span>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
 
-        <div className="mt-5">
+        {/* flex-grow pushes the tags container to the very bottom regardless of text length */}
+        <div className="mt-5! flex-grow">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2! text-secondary text-[14px] leading-relaxed">
+            {description}
+          </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4! flex flex-wrap gap-2 pt-2">
           {tags.map((tag) => (
             <p
               key={tag.name}
-              className={`text-[14px] ${tag.backgroundColor} text-white px-2 rounded-xl uppercase`}
+              className={`text-[12px] ${tag.backgroundColor} text-white px-2! py-0.5! rounded-lg uppercase font-semibold`}
             >
               {tag.name}
             </p>
@@ -71,7 +90,7 @@ const Works: React.FC = (): React.JSX.Element => {
       <motion.div variants={textVariant()}>
         <div className="flex items-center gap-2">
           <p className={`${styles.sectionSubText}`}>My work</p>
-          <span>({`${projects.length} projects`})</span>
+          <span className="text-secondary">({`${projects.length} projects`})</span>
         </div>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
@@ -89,7 +108,8 @@ const Works: React.FC = (): React.JSX.Element => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7 justify-center">
+      {/* Added items-stretch to ensure children in a row have the same height */}
+      <div className="mt-20! grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} />
         ))}

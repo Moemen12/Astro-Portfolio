@@ -11,7 +11,7 @@ const BackPackageCard = ({ pkg }: { pkg: PackagesParams }) => {
 
       <div className="flex items-center gap-6">
         <a href={pkg.github_url} target="_blank">
-          <Badge variant="outline" className="bg-black border-black">
+          <Badge variant="outline" className="bg-black border-black p-2!">
             github
           </Badge>
         </a>
@@ -19,7 +19,7 @@ const BackPackageCard = ({ pkg }: { pkg: PackagesParams }) => {
         <a href={pkg.npm_url} target="_blank">
           <Badge
             variant="outline"
-            className="bg-[#BC3433] text-[#151030] font-bold text-sm border-[#151030]"
+            className="bg-[#BC3433] text-[#151030] font-bold text-sm border-[#151030] p-2!"
           >
             npm
           </Badge>

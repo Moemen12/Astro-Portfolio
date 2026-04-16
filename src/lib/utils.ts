@@ -8,19 +8,21 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const styles = {
-  paddingX: "sm:px-16 px-6",
-  paddingY: "sm:py-16 py-6",
-  padding: "sm:px-16 px-6 sm:py-16 py-10",
+  // Original Next.js padding with ! modifier
+  paddingX: "sm:px-16! px-6!",
+  paddingY: "sm:py-16! py-6!",
+  padding: "sm:px-16! px-6! sm:py-16! py-10!",
 
+  // Original Next.js Sizes (50px/25px) with ! modifier
   heroHeadText:
-    "font-black text-white lg:text-[50px] sm:text-[60px] xs:text-[50px] text-[30px] lg:leading-[98px] mt-2",
+    "font-black text-white lg:text-[50px]! sm:text-[60px]! xs:text-[50px]! text-[30px]! lg:leading-[98px]! mt-2!",
   heroSubText:
-    "text-[#dfd9ff] font-medium lg:text-[25px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
+    "text-[#dfd9ff] font-medium lg:text-[25px]! sm:text-[26px]! xs:text-[20px]! text-[16px]! lg:leading-[40px]!",
 
   sectionHeadText:
-    "text-white font-black md:text-[50px] sm:text-[50px] xs:text-[40px] text-[30px]",
+    "text-white font-black md:text-[50px]! text-white! sm:text-[50px]! xs:text-[40px]! text-[30px]!",
   sectionSubText:
-    "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+    "sm:text-[18px]! text-[14px]! text-white! uppercase tracking-wider!",
 };
 
 export const textVariant = (delay?: number): Variants => {
@@ -66,6 +68,7 @@ export const fadeIn = (
     },
   };
 };
+
 export const zoomIn = (delay: number, duration: number): Variants => {
   return {
     hidden: {

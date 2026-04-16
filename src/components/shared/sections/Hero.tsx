@@ -1,10 +1,6 @@
-// import { motion } from "framer-motion";
 import { styles } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-// import { ComputersCanvas } from "@/components/shared/canvas";
-// Link replaced;
 import { ReactTyped } from "react-typed";
-// Image replaced;
 import { cv, git_square, linkdln } from "@/assets";
 
 const Hero = () => {
@@ -16,16 +12,9 @@ const Hero = () => {
         setIsWideScreen(window.innerWidth > 767);
       };
 
-      // Set the initial state
       handleResize();
-
-      // Add event listener
       window.addEventListener("resize", handleResize);
-
-      // Cleanup event listener on component unmount
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
+      return () => window.removeEventListener("resize", handleResize);
     }
   }, []);
 
@@ -85,7 +74,7 @@ const Hero = () => {
                 />
               </a>
               <a
-                href={"https://www.linkedin.c@/moemen-saadeh-707436260"}
+                href={"https://www.linkedin.com/in/moemen-saadeh-707436260"}
               >
                 <img
                   src={linkdln}
@@ -96,34 +85,9 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          {/* <div>
-            <h3>About</h3>
-               
-          </div> */}
         </div>
       </div>
-      {/* {isWideScreen && (
-        <> */}
-      {/* <ComputersCanvas /> */}
-      {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href={"#about"}>
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
-          </div>
-        </a>
-      </div> */}
-      {/* </>
-      )} */}
+
     </section>
   );
 };

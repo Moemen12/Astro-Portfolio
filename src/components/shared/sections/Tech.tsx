@@ -35,14 +35,13 @@ const Tech: React.FC = (): React.JSX.Element => {
           ))}
         </div>
       ) : ( */}
-      <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-6 mt-20 gap-3">
+      <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-6 mt-20! gap-3">
         {technologies.map((technology: TechnologiesParams) => (
           <TooltipProvider key={technology.name}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <button
-                  type="button"
-                  className={`bg-[#1D1836] grid place-items-center hover:bg-violet-800 rounded-xl aspect-square p-3 w-full transition-transform duration-300 hover:scale-105 ${clickedTech === technology.name ? "bg-violet-950" : ""
+                <div
+                  className={`bg-[#1D1836] grid place-items-center hover:bg-violet-800 rounded-xl aspect-square transition-transform duration-300 hover:scale-105 cursor-pointer ${clickedTech === technology.name ? "bg-violet-950" : ""
                     }`}
                   onClick={() => handleClick(technology.name)}
                 >
@@ -51,10 +50,10 @@ const Tech: React.FC = (): React.JSX.Element => {
                       loading="lazy"
                       src={technology.icon}
                       alt={technology.name}
-                      className="w-full h-full object-contain"
+                      className="w-4/5 h-4/5 object-contain"
                     />
                   </Suspense>
-                </button>
+                </div>
               </TooltipTrigger>
               <TooltipContent className="bg-[#111827] border-transparent rounded">
                 <p>{technology.name}</p>

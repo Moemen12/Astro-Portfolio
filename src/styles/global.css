@@ -14,10 +14,25 @@
   --breakpoint-xs: 450px;
   --breakpoint-special-screen: 830px;
 
-  --background-image-hero-pattern: url('/assets/herobg.png');
+  --image-hero-pattern: url('/assets/herobg.png');
 }
 
 
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.max-w-7xl {
+  max-width: 80rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 * {
   margin: 0;
@@ -36,55 +51,56 @@
 
 .black-gradient {
   background: #000000;
-  background: linear-gradient(to right, #434343, #000000);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #434343,
+      #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #434343,
+      #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
   background: #804dee;
-  background: linear-gradient(270deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%);
 }
 
-.green-pink-gradient {
-  background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+@utility green-pink-gradient {
+  background: linear-gradient(var(--color-tertiary), var(--color-tertiary)) padding-box,
+    linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%) border-box !important;
+  border: 1px solid transparent !important;
 }
 
-.orange-text-gradient {
-  background: #f12711;
+@utility orange-text-gradient {
   background: linear-gradient(to top, #f12711, #f5af19);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
-.green-text-gradient {
-  background: #11998e;
+@utility green-text-gradient {
   background: linear-gradient(to top, #11998e, #38ef7d);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
-.blue-text-gradient {
-  background: #56ccf2;
+@utility blue-text-gradient {
   background: linear-gradient(to top, #2f80ed, #56ccf2);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
-.pink-text-gradient {
-  background: #ec008c;
+@utility pink-text-gradient {
   background: linear-gradient(to top, #ec008c, #fc6767);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
 }
 
+/* canvas- styles */
 .canvas-loader {
   font-size: 10px;
   width: 1em;
