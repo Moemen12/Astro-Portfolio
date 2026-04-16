@@ -8,7 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     ssr: {
-      noExternal: ['reactjs-flip-card'],
+    noExternal: ['reactjs-flip-card', 'react-rough-notation'],
     },
   },
 });
