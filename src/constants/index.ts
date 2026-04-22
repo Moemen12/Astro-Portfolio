@@ -548,7 +548,30 @@ const projects: ProjectsParams[] = [
 ];
 
 const packages: PackagesParams[] = [
+    {
+    name: "speech-command-engine",
+    image: npm,
+    version: "1.0.5",
+    github_url: "https://github.com/Moemen12/speech-command-engine",
+    npm_url: "https://www.npmjs.com/package/speech-command-engine",
+  },
+
   {
+    name: "nextray",
+    image: npm,
+    version: "1.0.0",
+    github_url: "https://github.com/Moemen12/nextray",
+    npm_url: "https://www.npmjs.com/package/@saadeh/nextray",
+  },
+
+  {
+    name: "ext-sync",
+    image: npm,
+    version: "1.1.1",
+    github_url: "https://github.com/Moemen12/ext-sync",
+    npm_url: "https://www.npmjs.com/package/@saadeh/ext-sync",
+  },
+    {
     name: "valid-utils",
     image: npm,
     version: "1.0.1",
@@ -556,21 +579,7 @@ const packages: PackagesParams[] = [
     npm_url: "https://www.npmjs.com/package/valid-utils",
   },
   {
-    name: "speech-command-engine",
-    image: npm,
-    version: "1.0.5",
-    github_url: "https://github.com/Moemen12/speech-command-engine",
-    npm_url: "https://www.npmjs.com/package/speech-command-engine",
-  },
-  {
-    name: "@saadeh/ext-sync",
-    image: npm,
-    version: "1.1.1",
-    github_url: "https://github.com/Moemen12/ext-sync",
-    npm_url: "https://www.npmjs.com/package/@saadeh/ext-sync",
-  },
-  {
-    name: "@saadeh/xlsx",
+    name: "xlsx",
     image: npm,
     version: "0.20.3",
     github_url: "https://github.com/SheetJS/sheetjs",
