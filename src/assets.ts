@@ -42,3 +42,4 @@ export const npm = "/assets/packages/npm.svg";
 export const youapp = "/assets/projects/youapp.png";
 export const drv = "/assets/company/drv_ninja_logo.jpeg";
 export const nextwork = "/assets/company/nextwork.png";
+export const arenax = "/assets/projects/arenax.png";

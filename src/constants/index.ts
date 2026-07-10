@@ -39,7 +39,8 @@ import {
   drv,
   onlyBackend,
   car,
-  nextwork
+  nextwork,
+  arenax,
 } from "@/assets";
 
 export const navLinks = [
@@ -160,11 +161,10 @@ const experiences: ExperienceCardParams[] = [
     iconBg: "#FFFFFF",
     date: "Nov 2025 – Present",
     points: [
-      "Tech Used: AWS (S3, CloudFront, other services), CI/CD, Cloud infrastructure",
-      "Organized and led educational sessions on AWS and cloud computing, improving participants’ practical understanding and engagement.",
-      "Demonstrated real-world performance differences between S3 and CloudFront using KeyCDN Performance Tool across multiple regions (~5), showing that a 3 MB video loads up to 4× faster via CloudFront than directly from S3.",
-      "Guided students through cloud deployment strategies, CI/CD workflows, and optimization trade-offs.",
-      "Provided hands-on mentoring, explaining cloud concepts, and helping participants apply best practices in practical scenarios.",
+      "Tech Used: AWS (S3, CloudFront), CI/CD, Cloud Infrastructure",
+      "Spearheaded AWS educational sessions and mentored students on CI/CD pipelines and scalable cloud deployment strategies.",
+      "Designed high-performance cloud architectures, leveraging CloudFront and S3 optimizations to serve as global benchmarks for educational content delivery.",
+      "Demonstrated real-world performance differences using optimization tools across multiple regions, proving that media assets load multiple times faster via CloudFront than directly from S3.",
     ],
   },
   {
@@ -174,12 +174,12 @@ const experiences: ExperienceCardParams[] = [
     iconBg: "#FFFFFF",
     date: "Apr 2025 – Oct 2025",
     points: [
-      "Tech Used: Next.js, Vue.js, Laravel, NestJS, TypeScript, PostgreSQL, AWS S3, PostHog",
-      "Led full refactoring of Next.js frontend architecture to Domain-Driven Design (DDD), improving maintainability, implementing SEO best practices (sitemap, robots.txt, metadata), and optimizing initial page load speed.",
-      "Integrated PostHog analytics for real estate platforms, tracking ~80% of users to analyze engagement and guide content/feature decisions.",
-      "Implemented CI/CD rules and automated checks to prevent non-compliant code from being pushed, ensuring code quality and system stability.",
-      "Built AWS S3-based document management system with presigned URLs, improving upload efficiency, scalability, and secure storage for client files.",
-      "Developed HubSpot Calendar integration using Vue.js, Laravel, and Inertia, enabling direct client-owner communication and streamlined scheduling.",
+      "Tech Used: Node.js Frameworks, Vue.js, Laravel, TypeScript, PostgreSQL, AWS S3, PostHog",
+      "Refactored frontend architecture using DDD principles, significantly enhancing maintainability and speeding up initial page loads.",
+      "Implemented advanced SEO architectures (dynamic sitemaps, robots.txt customization, and semantic metadata), drastically improving search engine crawling efficiency and page indexation rates.",
+      "Integrated PostHog analytics, tracking ~80% of user interactions to drive data-informed product decisions.",
+      "Architected a secure, scalable document management system on AWS using presigned URLs, improving upload efficiency and ensuring strict data privacy for sensitive client files.",
+      "Developed HubSpot Calendar integrations using modern frontend views and backend routing to enable streamlined client scheduling.",
     ],
   },
   {
@@ -189,12 +189,11 @@ const experiences: ExperienceCardParams[] = [
     iconBg: "#E6DEDD",
     date: "Apr 2024 – Jun 2025",
     points: [
-      "Tech Used: Next.js, React, NestJS, TypeScript, Redis, Laravel, MySQL, Microservices",
-      "Applied frontend performance optimizations (memoization, lazy loading, code splitting) in Next.js, improving initial page load and user experience for ~2000 shareholders.",
-      "Transformed monolithic NestJS application into a microservices architecture, enabling independent deployments, improving maintainability, and supporting collaboration across a multinational team (~India, Tunisia, Lebanon, Turkey, Algeria).",
-      "Implemented Redis caching for high-frequency API endpoints on shareholder dashboards (Laravel/MySQL), reducing response time from ~600ms to ~120ms.",
-      "Developed and secured critical shareholder dashboards, including OTP-based authentication, enhancing security and adoption; discovered a major vulnerability that led to CEO-page access remediation.",
-      "Built stakeholder dashboards using Laravel/MySQL, leveraging built-in functionality to accelerate development and efficiently handle growing user and investor demands.",
+      "Tech Used: Node.js Frameworks, NestJS, TypeScript, Redis, Laravel, MySQL, Microservices",
+      "Developed and secured critical shareholder dashboards with OTP authentication; identified a major vulnerability impacting CEO-level access and led remediation efforts.",
+      "Optimized application performance for 2,000+ shareholders, applying frontend optimizations like memoization and lazy loading to drastically reduce page load times.",
+      "Optimized API latency by 80% (reducing response times from 600ms to 120ms) by deploying Redis cache layers and restructuring inefficient queries to significantly reduce database overhead.",
+      "Transformed a monolithic application into a microservices architecture, enabling independent deployments and establishing clear domain boundaries across a multinational engineering team.",
     ],
   },
   {
@@ -204,12 +203,11 @@ const experiences: ExperienceCardParams[] = [
     iconBg: "#FED242",
     date: "Apr 2023 – Mar 2024",
     points: [
-      "Tech Used: Laravel, SQL, ReactJS, Algolia, REST APIs",
-      "Developed APIs and server-side logic using Laravel, supporting multiple daily client requests and improving backend performance.",
-      "Built analytics and reporting tools used by internal teams and clients, enhancing operational decisionmaking and efficiency.",
-      "Integrated Algolia search functionality, reducing average query response time from ~500ms to ~150ms and improving user experience.",
-      "Contributed to both frontend (ReactJS) and backend (Laravel) development, focusing on scalable solutions to support the growing startup user base.",
-      "Assisted in end-to-end deployment from development to production, reducing downtime and ensuring smooth product launches.",
+      "Tech Used: Laravel, SQL, ReactJS, Algolia, REST APIs, CI/CD",
+      "Developed high-performance Laravel APIs supporting ~10,000 daily requests and scaling through rapid user growth.",
+      "Architected modular backend features with strict architectural boundaries, establishing automated quality checks and pipelines to enforce code compliance and eliminate technical debt.",
+      "Integrated Algolia search to replace legacy lookup systems, drastically reducing query latency from ~500ms to ~150ms while improving search relevance.",
+      "Contributed to end-to-end deployments from development to production, minimizing downtime and ensuring smooth feature rollouts.",
     ],
   },
   {
@@ -219,10 +217,10 @@ const experiences: ExperienceCardParams[] = [
     iconBg: "#000000",
     date: "Oct 2021 – Mar 2022",
     points: [
-      "Tech Used: React.js, Next.js, TypeScript, TailwindCSS, Bootstrap, Sass",
-      "Developed responsive client-facing pages using React.js/Next.js and TailwindCSS, ensuring cross-device consistency and performance.",
-      "Migrated projects from React to Next.js, improving initial page load speed by ~40% and boosting SEO performance by ~25% based on Lighthouse metrics.",
-      "Collaborated directly with clients to gather requirements and deliver tailored web solutions that aligned with business objectives.",
+      "Tech Used: Node.js Frameworks, TypeScript, TailwindCSS, Bootstrap, Sass",
+      "Delivered responsive, client-facing web solutions tailored closely to diverse client business objectives and cross-device consistency.",
+      "Migrated legacy web applications to modern server-rendered frameworks, significantly improving Core Web Vitals, performance scores, and search engine indexing based on Lighthouse metrics.",
+      "Collaborated directly with external stakeholders to gather system requirements and map technical implementations to business goals.",
     ],
   },
   {
@@ -233,9 +231,9 @@ const experiences: ExperienceCardParams[] = [
     date: "Feb 2021 – Sep 2021",
     points: [
       "Tech Used: Magento 2, PHP, MySQL, Frontend (HTML, CSS, JS)",
-      "Developed and maintained eCommerce websites with Magento 2, implementing multiple themes and optimizing features to improve usability and site performance.",
-      "Delivered customized solutions directly to clients, contributing to increased online sales and high client satisfaction.",
-      "Collaborated with UI/UX designers and project managers to ensure cohesive, high-quality web applications.",
+      "Maintained complex Magento 2 eCommerce sites, delivering custom architectural solutions that drove online sales growth.",
+      "Collaborated closely with UI/UX teams to optimize frontend features, enhance core usability, and minimize checkout friction.",
+      "Interfaced directly with clients to troubleshoot system issues, optimize product listings, and ensure high client satisfaction.",
     ],
   },
 ];
@@ -268,6 +266,48 @@ const testimonials: TestimonialParams[] = [
 ];
 
 const projects: ProjectsParams[] = [
+  {
+    name: "ArenaX",
+    description:
+      "A competitive talent-validation marketplace that transforms skill assessment into live, measurable performance data. Built with server-authoritative match logic, real-time leaderboards, anti-cheat mechanics, and enterprise recruiter workflows to let candidates prove their abilities through verified competitive challenges.",
+    tags: [
+      {
+        name: "nextjs",
+        backgroundColor: "bg-black",
+      },
+      {
+        name: "Typescript",
+        backgroundColor: "bg-[#3178C6]",
+      },
+      {
+        name: "Supabase",
+        backgroundColor: "bg-[#3ECF8E]",
+      },
+      {
+        name: "Upstash",
+        backgroundColor: "bg-[#00E599] text-black",
+      },
+      {
+        name: "tailwind",
+        backgroundColor: "bg-[#3ebfbb]",
+      },
+      {
+        name: "Sentry",
+        backgroundColor: "bg-[#362D59]",
+      },
+      {
+        name: "Gmail",
+        backgroundColor: "bg-[#FFFF] !text-black-200",
+      },
+      {
+        name: "AI",
+        backgroundColor: "bg-[#7C3AED] text-white",
+      },
+    ],
+    image: arenax,
+    source_code_link: "https://github.com/Moemen12/MindArena",
+    live: "https://mind-arena-rho.vercel.app/",
+  },
   {
     name: "Car Rental System",
     description:
@@ -415,8 +455,6 @@ const projects: ProjectsParams[] = [
     image: car,
     live: "https://saadeh-dashboard.vercel.app",
   },
-
-
   {
     name: "Halo Chat",
     description:
@@ -546,9 +584,8 @@ const projects: ProjectsParams[] = [
     live: "https://event-platform-woad-delta-95.vercel.app",
   },
 ];
-
 const packages: PackagesParams[] = [
-    {
+  {
     name: "speech-command-engine",
     image: npm,
     version: "1.0.5",
@@ -571,7 +608,7 @@ const packages: PackagesParams[] = [
     github_url: "https://github.com/Moemen12/ext-sync",
     npm_url: "https://www.npmjs.com/package/@saadeh/ext-sync",
   },
-    {
+  {
     name: "valid-utils",
     image: npm,
     version: "1.0.1",

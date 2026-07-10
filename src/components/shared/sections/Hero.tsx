@@ -47,10 +47,8 @@ const Hero = () => {
           </h1>
           <div>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              A full-stack web developer passionate about creating dynamic and
-              secure web applications, with a keen interest in exploring
-              security and Arduino projects, constantly seeking innovation and
-              technical excellence.
+             Senior Full Stack Engineer skilled in Node.js ecosystems and cloud platforms, highly adaptable to solve complex product challenges. Bridges the
+gap between technical execution and business goals by building scalable, cost-efficient applications that maximize efficiency and value.
             </p>
             <div className="flex items-center gap-1 mt-4">
               <a
