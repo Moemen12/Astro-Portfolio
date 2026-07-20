@@ -47,12 +47,12 @@ const Hero = () => {
           </h1>
           <div>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-             Senior Full Stack Engineer skilled in Node.js ecosystems and cloud platforms, highly adaptable to solve complex product challenges. Bridges the
-gap between technical execution and business goals by building scalable, cost-efficient applications that maximize efficiency and value.
+              Senior Full Stack Engineer skilled in Node.js ecosystems and cloud platforms, highly adaptable to solve complex product challenges. Bridges the
+              gap between technical execution and business goals by building scalable, cost-efficient applications that maximize efficiency and value.
             </p>
             <div className="flex items-center gap-1 mt-4">
               <a
-                href={"/assets/Moemen_Saadeh_Resume.pdf"}
+                href={"/assets/Moemen_Saadeh_FullStack_Dev.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
